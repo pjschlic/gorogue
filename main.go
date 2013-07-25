@@ -109,7 +109,7 @@ func main() {
   p = *NewPlayer()
   p.Draw()
   termbox.Flush()
-  <-time.After(2000 * time.Millisecond) //++ TODO: find out wether .After() or .Sleep() is better performance-wise
+  <-time.After(2000 * time.Millisecond)
   termbox.Close()
   os.Exit(0)
 }
